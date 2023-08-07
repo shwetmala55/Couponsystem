@@ -1,0 +1,110 @@
+/* coupons.css */
+
+/* Style for the coupon container */
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+.nav{
+ display: flex;
+ background-color: #1b0325;
+ height: 9vh;
+ /* position: fixed; */
+ /* width: 100%; */
+ margin-top: 0;
+}
+.navitem{
+ color: #f1f1f1;
+ 
+  margin: 10px;
+  
+  padding: 20px;
+
+  font-size: 25px;
+  width: 5vw;
+  cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navitemr{
+ background-color: #f1f1f1;
+ /* background-color: #4caf50; */
+ margin-left: auto;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ /* margin-left: 35vw; */
+ /* margin-right: 2vw; */
+  padding: 20px;
+  font-size: 13px;
+  width: 8%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navitem:hover {
+  /* background-color: #871a89; */
+  text-decoration: underline;
+ }
+.logo{
+
+ width: 47px;
+ /* background-color: #4caf50; */
+ /* object-fit:contain; */
+}
+.navlogo{
+/* background-color: rgb(227, 29, 29); */
+ width: 2vw;
+ margin-right: 0vw;
+}
+
+body{
+  background-color: #3E065F;
+  background-color: black;
+  background-color: rgb(45, 5, 47);
+  /* padding-top: 40px; */
+}
+
+
+
+
+#couponContainer {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 20px;
+}
+
+h1{
+  color: white;
+  margin-top :5vh;
+  margin-bottom: 5vh;
+  margin-top: 0;
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  /* justify-self: center; */
+}
+/* Style for individual coupons */
+.coupon {
+ background-color: #f0f0f0;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coupon h2 {
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+
+.coupon p {
+ font-size: 14px;
+}
+
+.nav{
+  margin-top: 0;
+  padding-top:0 ;
+}

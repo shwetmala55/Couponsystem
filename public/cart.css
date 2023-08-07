@@ -1,0 +1,146 @@
+*{
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .nav{
+  display: flex;
+  background-color: #1b0325;
+  height: 9vh;
+  /* width: 100%;
+  position: fixed; */
+  
+ }
+ .navitem{
+  color: #f1f1f1;
+   margin: 10px;
+   
+   padding: 20px;
+  
+   font-size: 25px;
+   width: 5vw;
+   cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navitem:hover {
+  /* background-color: #871a89; */
+  text-decoration: underline;
+ }
+ .navitemr{
+  background-color: #f1f1f1;
+  /* background-color: #4caf50; */
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 35vw; */
+  /* margin-right: 2vw; */
+   padding: 20px;
+   font-size: 13px;
+   width: 8%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+.container{
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ align-items: center;
+ color: white;
+ background-color: #3E065F; 
+ height: 700px;
+
+}
+.logo{
+  width: 47px;
+  
+  /* object-fit:contain; */
+ }
+ .navlogo{
+
+  width: 2vw;
+  margin-right: 0;
+ }
+#coupon{
+height: 4vh;
+width: 30vw;
+
+}
+.cuoponcode{
+ /* background-color: #3E065F; */
+ width: 20vw;
+ height: 10vh;
+ margin-bottom: 5vh;
+ margin-top:25vh;
+ font-size: xx-large;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+button{
+ margin-top: 5vh;
+ width: 14vw;
+ height: 6vh;
+ cursor: pointer;
+ background-color:beige;
+ background-color: #4e075a;
+ color:white
+}
+button:hover {
+  background-color: #871a89;
+ }
+
+h3{
+ background-color:#3E065F; ;
+ color: white;
+ height: 20vh;
+display: flex;
+align-items: center;
+justify-content: center;
+ font-size: xx-large;
+ 
+}
+/* Styles for the table */
+body{
+  background-color: black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #dbaadb;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  background-color: #ca8aca;
+}
+
+/* Additional styles for the cart summary */
+.cart-summary {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.cart-summary span {
+  color: #f00; /* Change the color as desired */
+}
+.headcode{
+  font-size: xx-large;
+}
+.delete-button{
+  /* background-color: #f00; */
+  margin-top: 0vh;
+  margin-bottom: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="nav">
+    <!-- <div class="navitem navlogo"><img class="logo" src="https://w7.pngwing.com/pngs/384/470/png-transparent-retail-computer-icons-e-commerce-sales-mega-offer-miscellaneous-service-logo.png" alt="logo" ></div> -->
+    <div class="navitem navlogo"><img class="logo" src="images/ecommerce (1).png" alt="logo" ></div>
+  
+    <div class="navitem" onclick="location.href='product-list.html'">Products</div>
+    <div class="navitem" onclick="location.href='coupons.html'">coupon</div>
+    <div class="navitem" onclick="location.href='admin.html'">admin</div>
+    <div class="navitem" onclick="location.href='index.html'">home</div>
+    <div class="navitem" onclick="location.href='cart.html'">cart</div>
+    <div class="navitemr" onclick="location.href='login.html'">login/sinup</div>
+  </div>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <div class="toggle-form">
+      <a href="login.html">Already have an account? Log in</a>
+    </div>
+  </div>
+  <script src="java/signup.js"></script>
+</body>
+</html>

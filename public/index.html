@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Ecommerce Website</title>
+  <link rel="stylesheet" href="index.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loginButton = document.querySelector(".navitemr");
+      var userEmail = localStorage.getItem("email");
+  
+      if (userEmail) {
+        loginButton.textContent = userEmail;
+      }
+    });
+  </script>
+  <link rel="icon" href="images/ecommerce.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="nav">
+    <!-- <div class="navitem navlogo"><img class="logo" src="https://w7.pngwing.com/pngs/384/470/png-transparent-retail-computer-icons-e-commerce-sales-mega-offer-miscellaneous-service-logo.png" alt="logo" ></div> -->
+    <div class="navitem navlogo"><img class="logo" src="images/ecommerce (1).png" alt="logo" ></div>
+  
+    <div class="navitem" onclick="location.href='product-list.html'">Products</div>
+    <div class="navitem" onclick="location.href='coupons.html'">coupon</div>
+    <div class="navitem" onclick="location.href='admin.html'">admin</div>
+    <div class="navitem" onclick="location.href='index.html'">home</div>
+    <div class="navitem" onclick="location.href='cart.html'">cart</div>
+    <div class="navitemr" onclick="location.href='login.html'">login/sinup</div>
+  </div>
+  
+    <h1 class="heading top">Welcome to My Ecommerce Website!</h1>
+
+  <div class="container">
+  
+  <div class="righti">
+    <a href="product-list.html">
+      <!-- <div class="slider">
+     <img class="bigimg"  src="https://img.freepik.com/premium-photo/female-hand-holding-sale-placard-clothes-shop_249974-3694.jpg" alt="Girl in a jacket" >
+     <img class="bigimg"  src="https://img.freepik.com/premium-vector/mega-sale-advertiving-banner-with-3d-illustration-dofferent-home-smart-electronic-devices_348818-574.jpg" alt="Girl in a jacket" >
+      </div> -->
+      <img class="bigimg slider" src="" alt="Image">
+    </a>
+  </div> 
+  </div>
+  <h1 class="heading">Discover Our Exciting Product Selection</h1>
+  <div class="container second">
+  
+    <div class="righti container2" >
+      <a href="product-list.html">
+      <img src="https://images.pexels.com/photos/5632381/pexels-photo-5632381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+      </a>
+   </div> 
+   <div class="leftiu container2"><img src="https://hip2save.com/wp-content/uploads/2017/11/target-toys.jpg?resize=1024%2C538&strip=all" alt="promotion">
+   </div>
+  
+    </div>
+  
+ 
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Welcome to our online store! We provide a wide range of high-quality products to meet your needs.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your E-commerce Website. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="java/index.js"></script>
+</body>
+</html> 
+

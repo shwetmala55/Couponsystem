@@ -1,0 +1,156 @@
+*{
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .nav{
+  display: flex;
+  background-color: #1b0325;
+  height: 9vh;
+  width: 100%;
+  position: fixed;
+ }
+ .navitem{
+  /* background-color: #f1f1f1; */
+  color: white;
+   margin: 10px;
+   
+   padding: 20px;
+  
+   font-size: 25px;
+   width: 5vw;
+   cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navitem:hover {
+   /* background-color: #871a89; */
+   text-decoration: underline;
+  }
+ .navitemr{
+  background-color: #f1f1f1;
+  /* background-color: #4caf50; */
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 35vw; */
+  /* margin-right: 2vw; */
+   padding: 20px;
+   font-size: 80%;
+   width: 8%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .nav2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  height: 40px;
+ }
+ .nav2 button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+ .nav2 input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20%;
+ }
+ /* .right{
+   width: 400%; 
+  height: 20px;
+  /* box-sizing: content-box; */
+  /* width: 50vw;} */
+ 
+ /*
+ .left{
+  height: 80vh;
+  
+ } */
+ .logo{
+   width: 47px;
+   /* background-color: #4caf50; */
+   /* object-fit:contain; */
+ }
+ .navlogo{
+  /* background-color: black; */
+   width: 2vw;
+   margin-right: 0;
+ }
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f2f2f2;
+ margin: 0;
+ padding: 0;
+ background-color:  rgb(45, 5, 47);
+}
+
+.container {
+ max-width: 400px;
+ margin: 0 auto;
+ 
+ padding: 40px;
+ background-color: #fff;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ background-color: rgb(216, 149, 216);
+}
+
+h2 {
+  margin-top: 70px;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.form-group {
+ margin-bottom: 20px;
+}
+
+label {
+ display: block;
+ margin-bottom: 5px;
+ font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+
+.btn {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ background-color: #6b0d58;
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+ border-radius: 4px;
+}
+
+.btn:hover {
+ background-color: #be1279;
+}
+
+.toggle-form {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.toggle-form a {
+ color: #666;
+}

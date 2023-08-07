@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="product-list.css">
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var loginButton = document.querySelector(".navitemr");
+    var userEmail = localStorage.getItem("email");
+    // var addcard=Document.querySelector(".addtocart"); 
+
+    if (userEmail) {
+      loginButton.textContent = userEmail;
+    }
+
+   
+  });
+</script>
+<link rel="icon" href="images/ecommerce.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="nav">
+    <div class="navitem navlogo"><img class="logo" src="images/ecommerce (1).png" alt="logo" ></div>
+    <div class="navitem" onclick="location.href='product-list.html'">Products</div>
+    <div class="navitem" onclick="location.href='coupons.html'">coupon</div>
+    <div class="navitem" onclick="location.href='admin.html'">admin</div>
+    <div class="navitem" onclick="location.href='index.html'">home</div>
+    <div class="navitem" onclick="location.href='cart.html'">cart</div>
+    <div class="navitemr" onclick="location.href='login.html'">login/sinup</div>
+  </div>
+ 
+<div class="h1cont">
+<h1></h1>
+</div>
+<details >
+  <summary class="summ">CLOTHES</summary>
+<div class="container">
+ <div class="item1">
+ <div class="dimg"><img  class="imgdd img11" src="/images/shirtn.jpeg" alt="Girl in a jacket" /></div> 
+ <div class="text">
+  <h3>Sophisticate Comfort Shirt</h3>
+  <p>Discover effortless style with our chic and versatile light-colored shirt for women. Made from high-quality fabric, it offers a flattering fit and all-day comfort for any occasion.</p>
+  <h4>Highlighted Features:</h4>
+  <ul>
+    <li>Stylish and feminine light-colored shirt designed for women.</li>
+    <li>Made from high-quality and comfortable fabric.</li>
+    <li>Versatile color choice that complements various outfits.</li>
+    <li>Flattering fit that enhances the feminine figure.</li>
+    <li>Available in a range of sizes to cater to different body types</li>
+  </ul>
+  
+  <div class="middle">
+  <div class="price" >₹3,999</div>
+  <div class="buy">
+    <!-- <button class="addtocart" data-price="7299">ADD TO CART</button> -->
+    <button class="addtocart" data-price="3999" onclick="addToCart('Sophisticate Comfort Shirt', 7299)">ADD TO CART</button>
+
+  </div>
+</div>
+ </div>
+ </div>
+
+ <div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/7752812/pexels-photo-7752812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" ></div> 
+  <div class="text">
+   <h3>Refined Light Pink Shirt for Men</h3>
+   <p>Discover a refined touch of style with this light pink shirt designed for men. Its soft hue, comfortable fabric, and versatile appeal make it a sophisticated addition to any wardrobe.</p>
+   <h4>Highlighted Features:</h4>
+   <ul>
+    <li>Refined light pink shirt designed for men.</li>
+    <li>Made from high-quality and comfortable fabric.</li>
+    <li>Versatile style suitable for various occasions.</li>
+    <li>Flattering fit that enhances your silhouette.</li>
+    <li>Durable construction for long-lasting wear.</li>
+   </ul>
+   
+   <div class="middle">
+   <div class="price" >₹2,299</div>
+   <div class="buy"><button class="addtocart" data-price="2299">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+  
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/5693888/pexels-photo-5693888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div>
+    <div class="text">
+     <h3>Playful Kids' T-Shirt and Pants Set</h3>
+     <p>Dress your little one in style with this playful t-shirt and pants set for kids. With its vibrant colors, comfortable fabric, and versatile design, it's perfect for everyday adventures.</p>
+     <h4>Highlighted Features:</h4>
+     <ul>
+      <li>Adorable t-shirt and pants set for kids.</li>
+      <li>Made from high-quality and comfortable fabric.</li>
+      <li>Vibrant colors that spark joy and imagination.</li>
+      <li>Easy-to-wear design for hassle-free dressing.</li>
+      <li>Durable construction to withstand active play.</li>
+     </ul>
+     
+     <div class="middle">
+     <div class="price" >₹1,299</div>
+     <div class="buy"><button class="addtocart" data-price="1299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+<div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/5996938/pexels-photo-5996938.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+  </div>
+  <div class="text">
+   <h3>Dark Purple Men's Shirt</h3>
+   <p>Step up your style game with this dark purple men's shirt. Its versatile design, flattering fit, and high-quality fabric make it a must-have for any fashion-conscious man.</p>
+   <h4>Highlighted Features:</h4>
+   <ul>
+    <li>Dark purple shirt designed for men.</li>
+    <li>Made from high-quality and comfortable fabric.</li>
+    <li>Versatile style suitable for various occasions.</li>
+    <li>Flattering fit that enhances your silhouette.</li>
+    <li>Durable construction for long-lasting wear.</li>
+   </ul>
+   
+   <div class="middle">
+   <div class="price" >₹5,699</div>
+   <div class="buy"><button class="addtocart" data-price="5699">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+ 
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/14230352/pexels-photo-14230352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div> 
+    <div class="text">
+     <h3>Versatile Men's Shirt</h3>
+     <p>Discover a stylish and versatile shirt designed for men. With its flattering fit, high-quality fabric, and timeless appeal, it's the perfect addition to your wardrobe.</p>
+     <h4>Highlighted Features:</h4>
+     <ul>
+      <li>Stylish shirt designed for men.</li>
+      <li>Made from high-quality and comfortable fabric.</li>
+      <li>Versatile style suitable for various occasions.</li>
+      <li>Flattering fit that enhances your silhouette.</li>
+      <li>Durable construction for long-lasting wear.</li>
+     </ul>
+     
+     <div class="middle">
+     <div class="price" >₹7,299</div>
+     <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+
+ </div>
+</details>
+<details  >
+  <summary class="summ">ELECTRONICS</summary>
+<div class="container">
+ <div class="item1">
+ <div class="dimg"><img  class="imgdd img11" src="https://images.pexels.com/photos/1647978/pexels-photo-1647978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" /></div> 
+ <div class="text">
+  <h3>Experience the Best with iPhone</h3>
+  <p>Discover the pinnacle of innovation and performance with the iconic iPhone. With its cutting-edge features, stunning design, and seamless user experience, it's the ultimate smartphone for modern living.</p>
+  <h4>Highlighted Features:</h4>
+  <ul>
+    <li>Cutting-edge technology for unparalleled performance.</li>
+    <li>Sleek and stylish design that stands out from the crowd.</li>
+    <li>Intuitive user interface for seamless navigation.</li>
+    <!-- <li>High-quality camera for capturing your precious moments.</li> -->
+    <li>Secure and private ecosystem for peace of mind.</li> </ul>
+  
+  <div class="middle">
+  <div class="price" >₹1,16,999</div>
+  <div class="buy"><button class="addtocart" data-price="116999">ADD TO CART</button></div>
+</div>
+ </div>
+ </div>
+
+ <div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/8177853/pexels-photo-8177853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" ></div> 
+  <div class="text">
+   <h3>MacBook: Unleash Your Potential</h3>
+   <p>Experience unrivaled power, sleek design, and seamless performance with MacBook. Unleash your creativity and productivity with this iconic laptop.</p>
+   <h4>Highlighted Features:</h4>
+   <ul>
+    <li>Sleek and iconic design that commands attention.</li>
+    <li>Powerful performance for smooth multitasking.</li>
+    <li>Brilliant Retina display for immersive visuals.</li>
+    <li>Long-lasting battery life to keep you productive all day.</li>
+    <li>Intuitive macOS operating system for seamless workflow.</li>  </ul>
+   
+   <div class="middle">
+   <div class="price" >₹1,75,999</div>
+   <div class="buy"><button class="addtocart" data-price="175999">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+  
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/1983035/pexels-photo-1983035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div>
+    <div class="text">
+     <h3>Digital Cameras: Capture Life's Moments</h3>
+     <p>Discover the power of digital photography with our advanced cameras. From breathtaking image quality to intuitive controls, seize every moment with ease and precision.</p>
+     <h4>Highlighted Features:</h4>
+     <ul>
+      <li>High-resolution sensor for capturing detailed and vibrant photos.</li>
+      <li>Versatile lens options for various photography styles.</li>
+      <li>User-friendly interface for effortless operation.</li>
+      <li>Advanced autofocus system for sharp and precise shots.</li>
+      <li>Convenient connectivity options for easy photo sharing.</li> </ul>
+     
+     <div class="middle">
+     <div class="price" >₹36,999</div>
+     <div class="buy"><button class="addtocart" data-price="36999">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+<div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/3394651/pexels-photo-3394651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+  </div>
+  <div class="text">
+    <h3>White Headphones: Immerse in Sound</h3>
+    <p>Experience exceptional audio quality and sleek design with our white headphones. Enjoy immersive sound and stylish comfort for your music and media.</p>
+    <h4>Highlighted Features:</h4>
+    <ul>
+      <li>Premium audio quality for rich and dynamic sound.</li>
+      <li>Comfortable fit for extended listening sessions.</li>
+      <li>Sleek and stylish white color design.</li>
+      <li>Noise-cancellation technology for uninterrupted audio.</li>
+      <li>Convenient controls for easy playback and call management.</li>
+    </ul>
+   <div class="middle">
+   <div class="price" >₹2,000</div>
+   <div class="buy"><button class="addtocart" data-price="2000">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+ 
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://media.istockphoto.com/id/1380063784/photo/smart-watch-close-up-on-a-white-background-3d-render.jpg?s=1024x1024&w=is&k=20&c=FSkfozq49ipd7nUZFCwgL0dcENTJKVPCJP8LFWY6GIw=" alt="Girl in a jacket" >
+    </div> 
+    <div class="text">
+      <h3>Smart Watch: Stay Connected and Stylish</h3>
+      <p>Embrace the future of wearable technology with our smart watches. Experience seamless connectivity, fitness tracking, and personalized style, all at your wrist.</p>
+      <h4>Highlighted Features:</h4>
+      <ul>
+        <li>Intuitive touch-screen interface for effortless navigation.</li>
+        <li>Comprehensive fitness tracking for your active lifestyle.</li>
+        <li>Notifications and alerts to stay connected on the go.</li>
+        <li>Customizable watch faces and interchangeable bands for personal style.</li>
+        <li>Long battery life for extended usage without frequent charging.</li>
+      </ul>
+     
+     <div class="middle">
+     <div class="price" >₹1,800</div>
+     <div class="buy"><button class="addtocart" data-price="1800">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+
+ </div>
+</details>
+<details  >
+  <summary class="summ">FURNITURES</summary>
+<div class="container">
+ <div class="item1">
+ <div class="dimg"><img  class="imgdd img11" src="https://images.pexels.com/photos/13722896/pexels-photo-13722896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" /></div> 
+ <div class="text">
+  <h3>Bed: Comfort and Restful Sleep</h3>
+  <p>Discover the perfect bed for a restful night's sleep. Experience unparalleled comfort and support, allowing you to wake up rejuvenated and ready for the day.</p>
+  <h4>Highlighted Features:</h4>
+  <ul>
+    <li>Premium materials for ultimate comfort and durability.</li>
+    <li>Ergonomic design for optimal body support and alignment.</li>
+    <li>Various sizes and styles to suit your personal preference.</li>
+    <li>Temperature-regulating technology for a cool and cozy sleep environment.</li>
+    <li>Easy maintenance and care for long-lasting use.</li>
+  </ul>
+  <div class="middle">
+  <div class="price" >₹59,999</div>
+  <div class="buy"><button class="addtocart" data-price="59999">ADD TO CART</button></div>
+</div>
+ </div>
+ </div>
+
+ <div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/11112735/pexels-photo-11112735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" ></div> 
+  <div class="text">
+    <h3>One-Seater Sofa: Compact Comfort</h3>
+    <p>Experience the perfect blend of compact design and comfort with our one-seater sofa. Ideal for smaller spaces, it provides a cozy seating solution without compromising on style.</p>
+   <h4>Highlighted Features:</h4>
+   <ul>
+    <li>Compact design for versatile placement in any room.</li>
+    <li>Plush cushioning for optimal comfort and relaxation.</li>
+    <li>Durable construction for long-lasting use.</li>
+    <li>Stylish upholstery options to suit your aesthetic.</li>
+    <li>Ergonomic support for proper posture and comfort.</li>
+  </ul>
+  
+  
+  
+  
+   <div class="middle">
+   <div class="price" >₹7,299</div>
+   <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+  
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/5262675/pexels-photo-5262675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div>
+    <div class="text">
+      <h3>Dining Table: Gather and Dine in Style</h3>
+      <p>Elevate your dining experience with our exquisite dining table. Crafted with quality materials and stylish design, it sets the stage for memorable meals and meaningful gatherings.</p>
+      <h4>Highlighted Features:</h4>
+      <ul>
+        <li>Durable construction for long-lasting use.</li>
+        <li>Generous seating capacity for family and friends.</li>
+        <li>Elegant and versatile design to complement any decor.</li>
+        <li>Smooth surface for easy cleaning and maintenance.</li>
+        <li>Sturdy build to provide stability during meals.</li>
+      </ul>
+     <div class="middle">
+     <div class="price" >₹47,299</div>
+     <div class="buy"><button class="addtocart" data-price="47299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+<div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+  </div>
+  <div class="text">
+    <h3>Mirror: Reflect Your Style</h3>
+    <p>Discover the perfect mirror to enhance your space and reflect your personal style. With its exquisite design and functional appeal, it adds a touch of elegance and versatility to any room.</p>
+    <h4>Highlighted Features:</h4>
+    <ul>
+      <li>High-quality materials for durability and longevity.</li>
+      <li>Stylish frame options to complement various aesthetics.</li>
+      <li>Optimal size for versatile placement and usability.</li>
+      <li>Crisp and clear reflection for everyday use.</li>
+      <li>Easy installation and maintenance for convenience.</li>
+    </ul>
+   <div class="middle">
+   <div class="price" >₹7,299</div>
+   <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+ 
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/11112739/pexels-photo-11112739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div> 
+    <div class="text">
+      <h3>Table: Functional and Stylish</h3>
+<p>Elevate your living space with our versatile table. Designed with a perfect balance of functionality and style, it serves as a focal point for various activities and enhances the aesthetic appeal of any room.</p>
+<h4>Highlighted Features:</h4>
+<ul>
+  <li>Durable construction for long-lasting use.</li>
+  <li>Stylish design that complements a range of interior styles.</li>
+  <li>Ample surface area for practicality and convenience.</li>
+  <li>Sturdy build to support everyday activities.</li>
+  <li>Versatile usage for dining, working, or gathering with loved ones.</li>
+</ul>
+     
+     <div class="middle">
+     <div class="price" >₹7,299</div>
+     <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+
+ </div>
+</details>
+<details  open>
+  <summary class="summ">TOYS</summary>
+<div class="container">
+ <div class="item1">
+ <div class="dimg"><img  class="imgdd img11" src="https://images.pexels.com/photos/9951401/pexels-photo-9951401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" /></div> 
+ <div class="text">
+  <h3>Doll House: Imaginative Play, Endless Fun</h3>
+  <p>Spark your child's imagination with our enchanting doll house. Designed with meticulous attention to detail, it provides a world of creative play and endless storytelling possibilities.</p>
+  <h4>Highlighted Features:</h4>
+  <ul>
+    <li>Sturdy and durable construction for long-lasting enjoyment.</li>
+    <li>Multiple levels and rooms for immersive play.</li>
+    <li>Delightful furnishings and accessories for realistic play scenarios.</li>
+    <li>Open design for easy access and interactive play.</li>
+    <li>Encourages imaginative storytelling and social interaction.</li>
+  </ul>
+  <div class="middle">
+  <div class="price" >₹7,299</div>
+  <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+</div>
+ </div>
+ </div>
+
+ <div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/422292/pexels-photo-422292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" ></div> 
+  <div class="text">
+    <h3>Spinner: Relaxation and Stress Relief</h3>
+    <p>Experience relaxation and stress relief with our captivating spinner. Designed to provide a soothing sensory experience, it offers a simple yet effective way to unwind and find inner calm.</p>
+    <h4>Highlighted Features:</h4>
+    <ul>
+      <li>Durable construction for long-lasting use.</li>
+      <li>Smooth spinning motion for satisfying sensory stimulation.</li>
+      <li>Compact and portable design for on-the-go relaxation.</li>
+      <li>Enhances focus and promotes mindfulness.</li>
+      <li>Available in various colors and designs to suit your preference.</li>
+    </ul>
+        
+   <div class="middle">
+   <div class="price" >₹7,299</div>
+   <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+  
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/6210119/pexels-photo-6210119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div>
+    <div class="text">
+      <h3>Ride-On Toy Car: Adventure for Kids</h3>
+      <p>Ignite your child's imagination with our interactive ride-on toy car. Designed for ultimate excitement, it allows kids to sit, steer, and drive, providing endless hours of adventure and fun.</p>
+      <h4>Highlighted Features:</h4>
+      <ul>
+        <li>Durable construction for safe and long-lasting play.</li>
+        <li>Comfortable seat and steering wheel for a realistic driving experience.</li>
+        <li>Easy-to-use controls for forward and reverse motion.</li>
+        <li>Stylish design and vibrant colors for an eye-catching appeal.</li>
+        <li>Promotes motor skills development and imaginative play.</li>
+      </ul> 
+     <div class="middle">
+     <div class="price" >₹7,299</div>
+     <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+<div class="item1">
+  <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/8125848/pexels-photo-8125848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+  </div>
+  <div class="text">
+   
+<h3>White Small Teddy: Cuddly Companion</h3>
+<p>Embrace the softness and charm of our white small teddy. Designed to bring comfort and joy, it's the perfect cuddly companion for all ages, offering warmth and companionship whenever needed.</p>
+<h4>Highlighted Features:</h4>
+<ul>
+  <li>Super-soft plush material for huggable comfort.</li>
+  <li>Adorable design with endearing details.</li>
+  <li>Compact size for easy carrying and snuggling.</li>
+  <li>Durable construction for long-lasting companionship.</li>
+  <li>Perfect gift for birthdays, holidays, or special occasions.</li>
+</ul>
+   <div class="middle">
+   <div class="price" >₹7,299</div>
+   <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+ </div>
+  </div>
+  </div>
+ 
+  <div class="item1">
+    <div class="dimg"> <img class="imgdd" src="https://images.pexels.com/photos/10550507/pexels-photo-10550507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Girl in a jacket" >
+    </div> 
+    <div class="text">
+      <h3>Toy Car: Adventure on Wheels</h3>
+<p>Ignite your child's imagination with our thrilling toy car. Designed for endless fun and excitement, it offers an adventurous experience on wheels, promoting imaginative play and fostering motor skills development.</p>
+<h4>Highlighted Features:</h4>
+<ul>
+  <li>Durable construction for safe and long-lasting play.</li>
+  <li>Realistic design and vibrant colors for an eye-catching appeal.</li>
+  <li>Easy-to-use controls for an interactive driving experience.</li>
+  <li>Promotes creativity, imagination, and physical activity.</li>
+  <li>Perfect for indoor and outdoor play.</li>
+</ul>
+     
+     <div class="middle">
+     <div class="price" >₹7,299</div>
+     <div class="buy"><button class="addtocart" data-price="7299">ADD TO CART</button></div>
+   </div>
+    </div>
+    </div>
+ 
+
+ </div>
+</details>
+
+<script src="java/product-list.js"></script>
+</body>
+</html>
+

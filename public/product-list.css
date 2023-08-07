@@ -1,0 +1,230 @@
+*{
+  margin: 0px;
+  padding: 0px;
+ }
+ 
+ .nav{
+  display: flex;
+  background-color: #0c0011;
+  background-color: #1b0325;
+  height: 9vh;
+  width: 100%;
+  position: fixed;
+ }
+ .navitem{
+  /* background-color: #f1f1f1; */
+  color: white;
+   margin: 10px;
+   
+   padding: 20px;
+  
+   font-size: 25px;
+   width: 5vw;
+   cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .navitemr{
+  background-color: #f1f1f1;
+  /* background-color: #4caf50; */
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 35vw; */
+  /* margin-right: 2vw; */
+   padding: 20px;
+   font-size: 80%;
+   width: 8%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+
+ 
+/* .h1{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+} */
+.h1cont {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* margin-top: 20px; */
+ height: 13vh;
+ 
+}
+
+body{
+  background-color:black;
+ 
+}
+h1 {
+ text-align: center;
+ color: white;
+ margin-left:-6vw;
+}
+.container{
+ /* background-color: cornflowerblue; */
+ background-color: #000000;
+ display: flex;
+ height: 1900px;
+ flex-direction: column;
+ 
+}
+.item1{
+ display: flex;
+}
+img{
+ flex-shrink: 0;
+ object-fit: cover;
+
+ flex-basis: 100%;
+ /* padding-left: 2%;
+ padding-bottom: 2%; */
+ max-width: 40%;
+ height: auto;
+}
+.dimg{
+ max-width: 40%;
+ background-color:black;
+ /* background-color:purple; */
+
+ /* padding-left: 2%; */
+ margin: 4vh;
+ display: flex;
+ justify-content: center;
+}
+.imgdd{
+ /* flex-basis: 100%; */
+ flex-grow: 0;
+ flex-shrink: 1;
+ padding: 15px;
+ margin:15px;
+ /* max-width: 50%; */
+ max-width: 62%;
+ padding-left: 85px;
+ cursor: pointer;
+ /* max-height: 100%; */
+object-fit:contain;
+/****/
+padding: 0;
+margin: 0;
+}
+ .text{
+ background-color: aquamarine;
+ background-color: #8E05C2;
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,14,85,0.48427293280593486) 26%, rgba(0,212,255,1) 71%);
+ background: rgb(2,0,36);
+ background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,14,85,0.48427293280593486) 51%, rgba(0,212,255,1) 100%);
+ background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,14,85,0.48427293280593486) 51%, rgba(0,212,255,1) 100%);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,14,85,0.48427293280593486) 51%, rgba(0,212,255,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  color: white;
+ margin:2%;
+}
+h3{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: xx-large;
+}
+p{
+ margin: 2%;
+}
+.summ{
+  background-color: #8E05C2;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,14,85,0.19855864709164917) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+  height: 10vh;
+  margin-top:4vh;
+  display: flex;
+  width: 19vw;
+  margin-left: 36vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight: 800;
+  
+}
+.middle{
+  background-color: #700B97;
+  background: rgb(2,0,36);
+
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-top: 7vh;
+  height: 9vh;
+  padding-left: 5vw;
+  flex-direction: row;
+}
+.price{
+  /* background-color: gainsboro; */
+  font-size: x-large;
+}
+.buy{
+  margin-left: 10vw;
+  background-color:aqua;
+}
+.addtocart {
+  background-color: #3E065F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addtocart:hover {
+  background-color: #b081c2;
+}
+ul{
+  /* background-color: darkgrey; */
+  padding-left: 3vw;
+  margin-top: 1vh;
+}
+h4{
+  font-size: large;
+  padding-left: 1vw;
+  padding-top: 1vh;
+ 
+}
+
+
+/* .logo{
+  
+  width: 70px;
+
+ }
+ .navlogo{
+ background-color: rgb(227, 29, 29);
+  width: 9vw;
+  margin-right: 0vw;
+ } */
+
+ .logo{
+  width: 47px;
+  max-width: 100%;
+  /* background-color: #4caf50; */
+  /* object-fit:contain; */
+}
+.navlogo{
+ /* background-color: black; */
+  width: 4vw;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  
+}
+.navitem:hover {
+  /* background-color: #871a89; */
+  text-decoration: underline;
+ }

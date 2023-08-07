@@ -1,0 +1,139 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>cart</title>
+ <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="navitem"><div class="navcontent">logo</div></div>
+    <div class="navitem">shop</div>
+    <div class="navitem">cart</div>
+    <div class="navitem">coupons</div>
+    <div class="navitemr">home</div>
+  </div>
+ <div class="container">
+ <div class="cuoponcode"> <label for="coupon">Coupon Code:</label></div>
+ <div class="cuponin"><input type="text" id="coupon" name="coupon" /></div> 
+  <button id="applyCoupon">Apply Coupon</button>
+ </div>
+<h3>Cart Total: <span id="cartTotal">100.00</span></h3>
+<script src="java/cart.js"></script>
+</body>
+</html> -->
+<!--***********************************      -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>cart</title>
+ <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="navitem navlogo"><img class="logo" src="https://w7.pngwing.com/pngs/384/470/png-transparent-retail-computer-icons-e-commerce-sales-mega-offer-miscellaneous-service-logo.png" alt="logo" ></div>
+    <div class="navitem" onclick="location.href='product-list.html'">Products</div>
+    <div class="navitem" onclick="location.href='cart.html'">coupon</div>
+    <div class="navitem" onclick="location.href='admin.html'">admin</div>
+    <div class="navitem" onclick="location.href='index.html'">home</div>
+    <div class="navitem" onclick="location.href='cart.html'">cart</div>
+    <div class="navitemr" onclick="location.href='login.html'">login/sinup</div>
+  </div>
+  <div class="allitems">
+
+  </div>
+ <div class="container">
+ <div class="cuoponcode"> <label for="coupon">Coupon Code:</label></div>
+ <div class="cuponin"><input type="text" id="coupon" name="coupon" /></div> 
+  <button id="applyCoupon">Apply Coupon</button>
+ 
+ </div>
+ <h3>Cart Total: <span id="cartTotal">100.00</span></h3>
+<script src="java/cart.js"></script>
+<script src="java/cart1.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cart</title>
+ <link rel="stylesheet" href="cart.css">
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var loginButton = document.querySelector(".navitemr");
+    var userEmail = localStorage.getItem("email");
+
+    if (userEmail) {
+      loginButton.textContent = userEmail;
+    }
+  });
+</script>
+<link rel="icon" href="images/ecommerce.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="nav">
+    <div class="navitem navlogo"><img class="logo" src="images/ecommerce (1).png" alt="logo" ></div>
+  
+    <div class="navitem" onclick="location.href='product-list.html'">Products</div>
+    <div class="navitem" onclick="location.href='coupons.html'">Coupon</div>
+    <div class="navitem" onclick="location.href='admin.html'">Admin</div>
+    <div class="navitem" onclick="location.href='index.html'">Home</div>
+    <div class="navitem" onclick="location.href='cart.html'">Cart</div>
+    <div class="navitemr" onclick="location.href='login.html'">Login</div>
+  </div>
+
+  <div class="cart-items">
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Price</th>
+          <th class="spbtn">Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartItemsTableBody">
+       
+        <!-- Table rows for cart items will be dynamically generated here -->
+      </tbody>
+    </table>
+  </div>
+  <h3>Cart Total: <span id="cartTotal">0.00</span></h3>
+  <div class="container">
+   
+
+    <div class="coupon-code">
+      <label for="coupon" class="headcode">Coupon Code:</label>
+    </div>
+    <div class="coupon-input">
+      <input type="text" id="coupon" name="coupon" />
+    </div>
+    <button id="applyCoupon">Apply Coupon</button>
+  </div>
+
+  
+  <script src="java/cart.js"></script>
+  <script src="java/cart1.js"></script>
+  <script>
+    
+document.addEventListener('DOMContentLoaded', () => {
+  console.log(localStorage);
+  const cartTotalFromStorage = localStorage.getItem('cartTotal');
+  console.log('cartTotalFromStorage:', cartTotalFromStorage);
+
+  const cartTotalElement = document.getElementById('cartTotal');
+  const cartTotalText = cartTotalElement.innerText;
+
+  console.log('cartTotalText:', cartTotalText);
+  
+  cartTotalElement.innerText = `₹${cartTotalFromStorage || '0.00'}`;
+  console.log('Updated cartTotalElement:', cartTotalElement.innerText);
+});
+
+  </script>
+</body>
+</html>
